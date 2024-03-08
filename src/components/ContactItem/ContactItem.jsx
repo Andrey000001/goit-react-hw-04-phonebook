@@ -12,5 +12,4 @@ const ContactItem = ({ contact, deleteUser }) => {
     </Item>
   );
 };
-
 export default ContactItem;
