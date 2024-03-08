@@ -4,7 +4,7 @@ import { Item, Name, Number, Button } from './ContactItem.styled';
 const ContactItem = ({ contact, deleteUser }) => {
   const { name, number, id } = contact;
   return (
-    <Item key={name}>
+    <Item>
       <FaGenderless />
       <Name>{name}:</Name>
       <Number>{number}</Number>

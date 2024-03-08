@@ -3,7 +3,11 @@ export const ContactList = ({ dataContact, deleteUser }) => {
   return (
     <ul>
       {dataContact.map(contact => (
-        <ContactItem deleteUser={deleteUser} contact={contact} />
+        <ContactItem
+          key={contact.id}
+          deleteUser={deleteUser}
+          contact={contact}
+        />
       ))}
     </ul>
   );
